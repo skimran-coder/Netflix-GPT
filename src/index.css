@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .calendar-picker-indicator {
+    &::-webkit-calendar-picker-indicator {
+      background-color: rgb(220 38 38); /* Bright orange background */
+      color: black; /* White color for the icon */
+      border: 1px solid white; /* White border */
+      border-radius: 4px; /* Rounded corners */
+      padding: 4px; /* Padding around the icon */
+      cursor: pointer;
+    }
+    &::-webkit-datetime-edit-fields-wrapper{
+      
+      
+      
+    }
+  }
+}
