@@ -1,7 +1,17 @@
+
+import useNowPlayingMovies from "../utils/useNowPlayingMovies";
+import MainMovie from "./MainMovie";
+
 const Browse = () => {
-  return <div className="absolute top-28 text-white h-full w-full">
-    Browse
-  </div>;
+  useNowPlayingMovies();
+
+  
+
+  return (
+    <>
+      <MainMovie  />
+    </>
+  );
 };
 
 export default Browse;

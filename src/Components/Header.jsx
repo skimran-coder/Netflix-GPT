@@ -45,12 +45,7 @@ const Header = () => {
         </div>
       )}
 
-      <div className="relative  font-netflixSans">
-        <div className="h-full relative">
-          <div className="w-full h-full  bg-gradient-to-tr from-black absolute left-0 right-0 top-0 bottom-0"></div>
-          <img src={BG_IMG_URL} />
-        </div>
-      </div>
+      
     </div>
   );
 };

@@ -3,7 +3,6 @@ const checkValidInfo = (email, password, name, confirmPassword, setErrorMessage,
   const emailValue = email?.current?.value
   const nameValue = name?.current?.value
   const confirmPassValue = confirmPassword?.current?.value
-  console.log(passValue, confirmPassValue)
 
 
     if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailValue)) {
@@ -39,7 +38,6 @@ const checkValidInfo = (email, password, name, confirmPassword, setErrorMessage,
       }
       if (passValue !== confirmPassValue){
         setErrorMessage("Passwords do not match, please try again.")
-        console.log(passValue, confirmPassValue)
         return
       }
     }

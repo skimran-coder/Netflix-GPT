@@ -23,7 +23,6 @@ const Login = () => {
       setErrorMessage,
       isSignIn
     );
-    console.log(validationResult);
     if (!validationResult) return;
 
     if (!isSignIn) {
@@ -35,9 +34,7 @@ const Login = () => {
       )
         .then((userCredential) => {
           // Signed up
-          console.log("inside auth");
           const user = userCredential.user;
-          console.log(user);
         })
         .catch((error) => {
           const errCode = error.code;
