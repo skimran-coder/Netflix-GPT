@@ -17,3 +17,5 @@ export const api_options = {
 };
 
 export const MOVIE_POSTER_URL = "https://image.tmdb.org/t/p/w780"
+
+export const MOVIE_LIST_POSTER_URL = "https://image.tmdb.org/t/p/w154"

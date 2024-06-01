@@ -5,9 +5,12 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleIsSignIn } from "../utils/userSlice";
 
 const Login = () => {
-  const [isSignIn, setIsSignIn] = useState(true);
+  const isSignIn = useSelector((state) => state.user.isSignIn);
+  const dispatch = useDispatch();
   const name = useRef();
   const email = useRef();
   const password = useRef();
@@ -139,7 +142,7 @@ const Login = () => {
           {isSignIn ? "New to Netflix?" : "Already a user?"}{" "}
           <span
             className="font-bold cursor-pointer hover:underline"
-            onClick={() => setIsSignIn(!isSignIn)}
+            onClick={() => dispatch(toggleIsSignIn())}
           >
             {isSignIn ? "Sign up now." : "Sign in."}
           </span>{" "}

@@ -46,9 +46,9 @@ const MainMovie = () => {
       </div>
 
       {movieDetails && (
-        <div className="absolute top-80 ml-24 text-white z-20">
+        <div className="absolute top-72 ml-24 text-white z-20">
           <h1 className=" text-5xl pb-4">{movieDetails[0]?.title}</h1>
-          <p className="w-1/3 text-lg pb-8">{movieDetails[0]?.overview}</p>
+          <p className="w-2/3 text-lg pb-8">{movieDetails[0]?.overview}</p>
 
           <div>
             <button className="bg-white text-black px-4 py-2 rounded-md hover:bg-opacity-80 transition-all ease-in-out duration-150">
