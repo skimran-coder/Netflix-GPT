@@ -6,10 +6,10 @@ const Browse = () => {
   useNowPlayingMovies();
 
   return (
-    <>
+    <div>
       <MainMovie />
       <MovieCardsContainer />
-    </>
+    </div>
   );
 };
 

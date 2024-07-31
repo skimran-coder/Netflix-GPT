@@ -67,7 +67,7 @@ const Login = () => {
   };
 
   return (
-    <div className="absolute font-netflixSans top-1/2 left-1/2 z-10 text-white transform -translate-x-1/2 -translate-y-1/2 bg-black px-16 py-8 bg-opacity-50 w-4/12 rounded-md h-fit min-h-3/5">
+    <div className="absolute font-netflixSans top-[55%]  left-1/2 z-10 text-white transform -translate-x-1/2 -translate-y-1/2 bg-black px-16 py-8 bg-opacity-50 max-w-lg w-full rounded-md h-fit  ">
       {/* Form */}
       <h1 className="font-bold text-2xl pb-8">
         {isSignIn ? "Sign In" : "Sign Up"}
