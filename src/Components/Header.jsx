@@ -29,12 +29,13 @@ const Header = () => {
       
 
         <div className="z-10"> {
-          isSideBar ? 
+          isSideBar ? (
           <div className="flex-col justify-between">
-            <img width="50" height="50" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1" className="lg:hidden pl-2 flex w-12 mt-4 absolute top-0 left-2" onClick={() => setIsSideBar(!isSideBar)}/>
-            </div>
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1" className={`lg:hidden pl-2 flex w-12 mt-4 absolute top-0 left-2 ${!user && "hidden"}`} onClick={() => setIsSideBar(false)}/>
+            </div>)
           :
-          <img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="menu--v1" className="lg:hidden pl-2 flex w-12 mt-4 absolute top-0 left-2" onClick={() => setIsSideBar(!isSideBar)}/>
+          (
+          <img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/menu--v1.png" alt="menu--v1" className={`lg:hidden pl-2 flex w-12 mt-4 absolute top-0 left-2 ${!user && "hidden"}`} onClick={() => setIsSideBar(true)}/>)
           } 
           </div>
         
