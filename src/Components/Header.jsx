@@ -72,11 +72,11 @@ const Header = () => {
           <div className="w-12 h-12 pt-2 md:flex hidden">{Search_Icon_SVG}</div>
           <div className="w-12 h-12 pt-2 md:flex hidden">{Bell_Icon_SVG}</div>
           <img alt="avatar" src={AVATAR_IMG_URL} className="w-12 h-12 flex" />
-          <button className="bg-red-600 w-24 px-4 py-2 rounded-md md:flex hidden" onClick={handleLogOut}>Log Out</button>
+          <button className="bg-red-600 w-24 px-4 py-2 rounded-sm md:flex hidden" onClick={handleLogOut}>Log Out</button>
         </div>
       ) : (
-        <div className=" pr-2 sm:pr-20 pt-4 z-20 text-white bg-red-600">
-          <button className="bg-red-600 w-24 px-4 py-2 rounded-lg "
+        <div className=" pr-2 sm:pr-20 pt-4 z-20 text-white">
+          <button className="bg-red-600 w-24 px-4 py-2 rounded-sm "
           onClick={() => dispatch(toggleIsSignIn())}>
             {!isSignIn ? "Sign In" : "Sign Up"}
           </button>
