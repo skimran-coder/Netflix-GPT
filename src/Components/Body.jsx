@@ -6,6 +6,7 @@ import { auth } from "../utils/firebase";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { BG_IMG_URL } from "../Constant";
+import DisplaySection from "./DisplaySection";
 
 const Body = () => {
   const dispatch = useDispatch();
@@ -32,13 +33,14 @@ const Body = () => {
 
   return(
   <>
-  <div className="relative  font-netflixSans h-screen">
-        <div className="h-full relative">
+  <div className="  relative font-netflixSans h-screen border-b-8 border-stone-800">
+        
           <div className="w-full h-full  bg-gradient-to-tr from-black absolute left-0 right-0 top-0 bottom-0"></div>
-          <img src={BG_IMG_URL} className="h-full aspect-auto object-cover w-full"/>
+          <img src={BG_IMG_URL} className="h-full aspect-auto object-cover  w-full"/>
         </div>
-      </div>
+     
    <Login />
+   <DisplaySection />
   </>)
 };
 

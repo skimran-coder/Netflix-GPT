@@ -5,7 +5,7 @@ import Browse from './Components/Browse';
 
 const App = () => {
   const user = useSelector((state) => state.user.user);
-  console.log(user)
+
 
   return (
     <Router>

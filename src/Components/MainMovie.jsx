@@ -7,7 +7,6 @@ const MainMovie = () => {
   const [randomMovieId, setRandomMovieId] = useState(null);
   const mainMovie = useSelector((state) => state.movie.mainMovieTrailer);
   const [movieDetails, setMovieDetails] = useState(null);
-  console.log(mainMovie);
 
   useEffect(() => {
     if (nowPlayingMovies?.length) {
@@ -26,13 +25,13 @@ const MainMovie = () => {
     }
   }, [randomMovieId]);
 
-  console.log(movieDetails);
+
 
   useMovieTrailer(randomMovieId);
 
   return (
     <div className="">
-      <div className="  aspect-video top-0 left-0 w-full h-full -z-10 overflow-hidden ">
+      <div className=" fixed aspect-video top-0 left-0 w-full h-full -z-10 overflow-hidden">
         {mainMovie && (
           <iframe
             className=" w-full h-full pointer-events-none scale-[1.4]"
@@ -46,7 +45,7 @@ const MainMovie = () => {
       </div>
 
       {movieDetails && (
-        <div className="absolute  md:top-36 lg:top-60 top-20 ml-24 text-white z-20">
+        <div className="absolute  md:top-36 lg:top-60 top-20 ml-24  text-white z-20">
           <h1 className=" md:text-3xl lg:text-5xl text-2xl pb-4">{movieDetails[0]?.title}</h1>
           <p className="sm:w-2/3 w-full lg:text-lg md:text-base sm:text-sm text-sm pb-8">{movieDetails[0]?.overview}</p>
 
