@@ -30,8 +30,8 @@ const MainMovie = () => {
   useMovieTrailer(randomMovieId);
 
   return (
-    <div className="">
-      <div className=" fixed aspect-video top-0 left-0 w-full h-full -z-10 overflow-hidden">
+    <div className="w-100vw overflow-hidden">
+      <div className=" fixed aspect-video top-0 left-0 w-full h-full  -z-10 overflow-hidden">
         {mainMovie && (
           <iframe
             className=" w-full h-full pointer-events-none scale-[1.4]"
