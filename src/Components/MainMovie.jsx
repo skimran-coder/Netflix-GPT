@@ -32,7 +32,7 @@ console.log(mainMovie)
   
 
   return (
-    <div className="w-screen h-screen bg-gradient-to-t from-neutral-800 to-black overflow-hidden">
+    <div className="w-screen h-screen bg-gradient-to-t from-neutral-800 to-black overflow-hidden ">
       <div className="  aspect-video top-0 left-0 w-full  -z-10 overflow-hidden">
         {mainMovie && (
           <iframe

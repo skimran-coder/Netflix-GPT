@@ -43,9 +43,9 @@ const Header = () => {
         </div>
 
         {user && (
-          <ul className={`gap-4 text-lg transition-all  ${isSideBar ? " pt-20 absolute top-0 flex -left-2 flex-col bg-red-800 w-20 pl-4 pb-2" : "  hidden  " }`}>
+          <ul className={`gap-4 text-lg transition-all  ${isSideBar ? "h-screen pt-20 absolute top-0 flex -left-2 flex-col bg-red-800 w-20 pl-4 pb-2" : "  hidden  " }`}>
             <hr className="left-0 top-16 w-full absolute  bg-red-500 "></hr>
-            <img width="50" height="50" className="" src={HOME_ICON_URL} alt="home--v1"/>
+            <img width="50" height="50" className="hover:scale-105 " src={HOME_ICON_URL} alt="home--v1"/>
             <img width="50" height="50" src={TV_ICON_URL} alt="tv-show"/>
             <img width="50" height="50" src={MOVIE_ICON_URL} alt="movie--v1"/>
             <img width="50" height="50" src={POPULAR_ICON_URL} alt="popular-topic"/>
