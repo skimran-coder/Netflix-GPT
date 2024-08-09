@@ -11,7 +11,7 @@ const MovieCardsContainer = () => {
   const upcomingMovies = useSelector((state) => state.movie.upcomingMovies);
 
   return (
-    <div className="w-100vw h-fit bg-gradient-to-t from-black to-neutral-800 left-0 right-0 top-0 bottom-0 absolute sm:top-1/4 md:top-2/4 lg:top-3/4 pl-20 pt-2 flex flex-col gap-4 overflow-hidden">
+    <div className="w-100vw h-fit bg-gradient-to-t from-black to-neutral-800 left-0 right-0 top-2/4 bottom-0 absolute sm:top-3/4 md:top-2/4 lg:top-3/4 pl-20 pt-2 flex flex-col gap-4 overflow-hidden">
       <h3 className="text-white text-lg ">
         {nowPlayingMovies &&
           nowPlayingMovies.length > 0 &&
